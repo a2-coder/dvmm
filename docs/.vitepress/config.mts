@@ -27,7 +27,7 @@ export default defineConfig({
     logo: { src: '/logo.svg', width: 24, height: 24 },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/examples' }
+      { text: 'Whitepaper', link: '/dvmm-whitepaper.pdf', target: '_blank' }
     ],
 
     sidebar: [
@@ -48,6 +48,12 @@ export default defineConfig({
           { text: 'E-Commerce', link: '/examples/ecommerce' },
           { text: 'Messaging', link: '/examples/messaging' },
           { text: 'Project Management', link: '/examples/project-management' }
+        ]
+      },
+      {
+        text: 'Extras',
+        items: [
+          { text: 'LLM Instructions', link: '/llms-full.txt' },
         ]
       }
     ],

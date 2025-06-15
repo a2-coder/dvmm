@@ -10,29 +10,30 @@ A typical DVMM project is organized as follows:
 
 ```
 src
-├── domain
-│   ├── models         # Domain models (backend API response structure)
-│   ├── functions      # Functions to interact with backend APIs
-│   ├── client.ts      # API client setup (e.g., Axios, Fetch, Ky)
-│   └── index.ts       # Entry point for domain logic
-├── view
-│   ├── models         # View models (data structure needed by the UI)
-│   ├── mappers        # Mappers to convert between domain and view models
-│   └── index.ts       # Entry point for view logic
+├── data
+│   ├── domain
+│   │   ├── models         # Domain models (backend API response structure)
+│   │   ├── functions      # Functions to interact with backend APIs
+│   │   ├── client.ts      # API client setup (e.g., Axios, Fetch, Ky)
+│   │   └── index.ts       # Entry point for domain logic
+│   ├── view
+│   │   ├── models         # View models (data structure needed by the UI)
+│   │   ├── mappers        # Mappers to convert between domain and view models
+│   │   └── index.ts       # Entry point for view logic
 ├── components
 └── pages
 ```
 
 ### Folder Structure Explanation
 
-- **domain/models**: Contains TypeScript interfaces/types that mirror backend API responses. These should match the backend contract exactly.
-- **domain/functions**: Functions for fetching or mutating data via the backend API.
-- **domain/client.ts**: Sets up the API client (e.g., Axios instance or Fetch wrapper).
-- **domain/index.ts**: Aggregates and exports domain logic for easy imports.
+- **data/domain/models**: Contains TypeScript interfaces/types that mirror backend API responses. These should match the backend contract exactly.
+- **data/domain/functions**: Functions for fetching or mutating data via the backend API.
+- **data/domain/client.ts**: Sets up the API client (e.g., Axios instance or Fetch wrapper).
+- **data/domain/index.ts**: Aggregates and exports domain logic for easy imports.
 
-- **view/models**: Contains view model interfaces/types, shaped for UI needs (e.g., formatting, grouping, or flattening data).
-- **view/mappers**: Contains pure functions or classes that convert between domain and view models.
-- **view/index.ts**: Aggregates and exports view logic.
+- **data/view/models**: Contains view model interfaces/types, shaped for UI needs (e.g., formatting, grouping, or flattening data).
+- **data/view/mappers**: Contains pure functions or classes that convert between domain and view models.
+- **data/view/index.ts**: Aggregates and exports view logic.
 
 - **components**: UI components that consume view models.
 - **pages**: Top-level pages or routes.
