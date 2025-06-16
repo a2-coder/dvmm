@@ -218,7 +218,7 @@ export function usePosts() {
     return useQuery({
         queryKey: ['posts'],
         queryFn: async () => {
-            const domainPosts = await fetchPosts(client);
+            const domainPosts = await fn.posts.fetchPosts(client);
             return domainPosts.map(post => postMapper.toViewModel(post));
         },
     });
