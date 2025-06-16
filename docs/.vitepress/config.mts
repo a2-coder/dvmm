@@ -27,7 +27,7 @@ export default defineConfig({
     logo: { src: '/logo.svg', width: 24, height: 24 },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Whitepaper', link: '/dvmm-whitepaper.pdf', target: '_blank' }
+      { text: 'Whitepaper', link: 'https://zenodo.org/records/15671575', target: '_blank' }
     ],
 
     sidebar: [
