@@ -1,4 +1,7 @@
 # DVMM
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15671574.svg)](https://doi.org/10.5281/zenodo.15671574)
+
 **DVMM (Domain-View Model Mapper)** is a frontend architecture pattern for TypeScript projects. It separates backend data models (domain models) from UI models (view models) using dedicated mappers. This separation leads to cleaner code, easier maintenance, and enables backend and frontend teams to work in parallel.
 
 ## Core Concepts
