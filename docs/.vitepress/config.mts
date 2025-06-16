@@ -41,7 +41,6 @@ export default defineConfig({
       {
         text: 'Examples',
         items: [
-          { text: 'Overview', link: '/examples' },
           { text: 'Todo List', link: '/examples/todo-list' },
           { text: 'User Management', link: '/examples/user-management' },
           { text: 'Blog', link: '/examples/blog' },
